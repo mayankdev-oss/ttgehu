@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {"darkMode":"class","theme":{"extend":{"colors":{"on-error":"#1a0000","primary":"#a78bfa","secondary-fixed-dim":"#71717a","secondary-container":"#27272a","tertiary":"#34d399","error":"#ef4444","surface-container-lowest":"#09090b","surface-tint":"#a78bfa","on-error-container":"#fca5a5","secondary-fixed":"#a1a1aa","on-background":"#fafafa","tertiary-fixed-dim":"#6ee7b7","inverse-primary":"#5b21b6","secondary":"#71717a","on-primary":"#0a0012","surface-dim":"#0c0c0f","background":"#09090b","on-primary-container":"#ede9fe","on-primary-fixed-variant":"#5b21b6","surface-bright":"#18181b","inverse-surface":"#fafafa","on-secondary-fixed":"#18181b","on-secondary-fixed-variant":"#3f3f46","on-primary-fixed":"#2e1065","on-tertiary-fixed-variant":"#047857","surface-container-high":"#18181b","primary-container":"#7c3aed","on-tertiary-fixed":"#003318","primary-fixed":"#ede9fe","surface-container-highest":"#1e1e22","outline":"#52525b","error-container":"#3b1111","tertiary-fixed":"#bbf7d0","primary-fixed-dim":"#c4b5fd","surface":"#0c0c0f","on-secondary-container":"#a1a1aa","outline-variant":"#27272a","surface-container":"#121215","inverse-on-surface":"#09090b","on-secondary":"#09090b","on-tertiary":"#001a12","on-surface":"#fafafa","surface-container-low":"#0f0f12","surface-variant":"#18181b","tertiary-container":"#065f46","on-surface-variant":"#a1a1aa","on-tertiary-container":"#bbf7d0"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{},"fontFamily":{"headline":["Geist"],"display":["Geist"],"body":["Geist"],"label":["Geist"]},"fontSize":{}}}}</script></head><body class="bg-background font-body text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest border-r border-outline-variant z-50 flex flex-col justify-between p-5"><div class="flex flex-col gap-8"><div class="flex items-center justify-between px-2"><div class="flex items-center gap-3"><img alt="Brand logo. - Primary color: #4f46e5
+- Font: inter
+- Mode: light
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X75w7YKKGZL_5w3s6vGDl1a90uck0CRvplm9IoR-pZ2EkbTy-l2ioeiFEwoBnbAr7pEoFu3peg170eVKDiYHaQxK39Npp8srVjmoLYI0WBWI36R6nHvzm9Tj72eKKDq7wjzfHCfiO_ZHM99e1JFGF00yLiz3MkUymDV3TAEB_bR_7_Qt6acM_TKPaPYsejaB_EuuZcenQAgUjlrLHgWI0RLIQK6rSGLT802xHIQHFVy8JZlYc6GZEjscU"/><div class="flex flex-col"><span class="text-sm font-semibold tracking-tight text-on-surface font-headline">ProctorGrid</span><span class="text-[10px] text-on-surface-variant font-mono tracking-wide">v2.4.0-core</span></div></div></div><nav class="flex flex-col gap-1.5" data-active-classes="bg-secondary-container text-on-surface font-medium border-l-2 border-primary"><a class="flex items-center gap-3 px-3 py-2 text-sm rounded-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[18px]">space_dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2 text-sm rounded-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="classrooms" href="#"><span class="material-symbols-outlined text-[18px]">meeting_room</span><span>Classrooms</span></a><a class="flex items-center gap-3 px-3 py-2 text-sm rounded-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="exam-sessions" href="#"><span class="material-symbols-outlined text-[18px]">event_available</span><span>Exam Sessions</span></a><a aria-current="page" class="flex items-center gap-3 px-3 py-2 rounded-md transition-all bg-secondary-container text-on-surface font-medium border-l-2 border-primary" data-path="students" href="#"><span class="material-symbols-outlined text-[18px]">school</span><span>Students</span></a><a class="flex items-center gap-3 px-3 py-2 text-sm rounded-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="teachers" href="#"><span class="material-symbols-outlined text-[18px]">supervisor_account</span><span>Teachers</span></a><a class="flex items-center gap-3 px-3 py-2 text-sm rounded-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[18px]">tune</span><span>Settings</span></a></nav></div><div class="p-3 bg-surface-container rounded-lg border border-outline-variant flex items-center justify-between"><div class="flex items-center gap-2.5"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><div class="flex flex-col"><span class="text-xs font-medium text-on-surface">Proctor Engine</span><span class="text-[10px] text-on-surface-variant font-mono">Operational · 99.9%</span></div></div><span class="material-symbols-outlined text-secondary text-base">verified</span></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md border-b border-outline-variant z-40 flex items-center justify-between px-8"><div class="flex items-center gap-3"><div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container border border-outline-variant rounded-md cursor-pointer hover:border-outline transition-colors"><span class="material-symbols-outlined text-primary text-sm">calendar_today</span><span class="text-xs font-mono font-medium text-on-surface">Fall 2025 Midterms · Slot A</span><span class="material-symbols-outlined text-on-surface-variant text-sm">expand_more</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 bg-error-container/40 border border-error/20 rounded text-[11px] font-mono font-medium text-on-error-container"><span class="material-symbols-outlined text-xs text-error">warning</span><span>2 Conflicts</span></div></div><div class="flex items-center gap-4"><div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container rounded-md border border-outline-variant text-on-surface-variant text-xs font-mono"><span class="material-symbols-outlined text-sm">search</span><span>Search operational indices...</span><span class="px-1.5 py-0.5 rounded bg-surface-container-high border border-outline-variant text-[10px]">⌘K</span></div><button class="flex items-center gap-1.5 px-3 py-1.5 rounded-md border border-outline-variant hover:bg-surface-container text-xs font-medium text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-sm">ios_share</span><span>Export</span></button><div class="h-4 w-px bg-outline-variant"></div><div class="flex items-center gap-2.5 cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida/AEtjO1VHuqoeqmd7Cu4xMBD-x5dBhjjgWnUS7surSucuEs3VtnKXHqB6cYLHjm3wuYJ3tXPm2fMH2l1jVW5BU1UCk3mM6Uvc4Qqgs6zRAGs6nPCdgki76LcNoRV07-eI9FsIgJoaNOcgibFTKKF39MJu-XGDjbJiRgFagWbL_lTgrCBtNjsQ2H8Etf1pU7yweEF8fS33wJQkGneZzBuVUbpr9OfoIRgTmbXkcmOJJRQxI-jkDoFheubvidZRYkc"/><div class="flex flex-col text-left"><span class="text-xs font-medium text-on-surface leading-tight">Operations Lead</span><span class="text-[10px] text-on-surface-variant leading-tight">Proctor Center</span></div></div></div></header><main class="w-full pt-16 px-8 min-h-screen bg-background"><div class="flex flex-col w-full pb-16 space-y-10">
+<!-- Subtle Ambient Glow -->
+<div class="relative w-full">
+<div class="absolute -top-12 left-1/4 w-96 h-40 bg-primary/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-10 right-10 w-72 h-36 bg-tertiary/5 rounded-full blur-3xl pointer-events-none -z-10"></div>
+</div>
+<!-- Page Header -->
+<section class="flex flex-col md:flex-row md:items-end justify-between gap-6 pt-4">
+<div class="space-y-2">
+<div class="flex items-center gap-2 text-xs font-mono tracking-widest text-primary uppercase">
+<span class="inline-block w-2 h-2 rounded-full bg-primary animate-ping"></span>
+        Batch Execution Pipeline
+      </div>
+<h1 class="text-3xl font-semibold tracking-tight text-on-surface font-headline">
+        Student Rosters & Validation
+      </h1>
+<p class="text-sm text-on-surface-variant max-w-xl font-normal">
+        Import student enrollment files and verify seating eligibility. Exceptions are segregated for rapid human-in-the-loop resolution.
+      </p>
+</div>
+<!-- Secondary Actions -->
+<div class="flex items-center gap-3">
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface text-xs font-medium transition-all shadow-sm" title="Download CSV / Excel template" type="button">
+<span class="material-symbols-outlined text-base text-on-surface-variant">download</span>
+<span>Download Template</span>
+</button>
+<button class="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-on-primary hover:opacity-90 text-xs font-semibold tracking-wide transition-all shadow-md shadow-primary/20" id="commit-btn" type="button">
+<span class="material-symbols-outlined text-base">verified_user</span>
+<span>Commit Validated (1,412)</span>
+</button>
+</div>
+</section>
+<!-- Step-based Workflow Tracker -->
+<section class="w-full">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3 p-1.5 bg-surface-container-low rounded-xl">
+<!-- Step 1: Ingestion (Complete) -->
+<div class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container/60 hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-3.5">
+<div class="w-7 h-7 rounded-full bg-tertiary/15 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-base">check</span>
+</div>
+<div>
+<div class="text-[11px] font-mono uppercase tracking-wider text-tertiary">Step 01 • Complete</div>
+<div class="text-xs font-medium text-on-surface">1. Ingestion (1,415 Raw)</div>
+</div>
+</div>
+<span class="text-[11px] font-mono text-on-surface-variant">08:42:10 AM</span>
+</div>
+<!-- Step 2: Review Exceptions (Active) -->
+<div class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-highest shadow-md relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary"></div>
+<div class="flex items-center gap-3.5 pl-1.5">
+<div class="w-7 h-7 rounded-full bg-primary/20 text-primary flex items-center justify-center font-mono text-xs font-bold">
+            02
+          </div>
+<div>
+<div class="text-[11px] font-mono uppercase tracking-wider text-primary flex items-center gap-1.5">
+<span>Current Task</span>
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-primary"></span>
+</div>
+<div class="text-xs font-medium text-on-surface">2. Review Exceptions (3 Pending)</div>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-error-container/60 text-on-error-container text-[11px] font-mono font-medium">3 Blockers</span>
+</div>
+<!-- Step 3: Verified Cohort (Queued) -->
+<div class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container/40 opacity-70 hover:opacity-90 transition-opacity">
+<div class="flex items-center gap-3.5">
+<div class="w-7 h-7 rounded-full bg-secondary-container text-secondary-fixed flex items-center justify-center font-mono text-xs">
+            03
+          </div>
+<div>
+<div class="text-[11px] font-mono uppercase tracking-wider text-secondary-fixed">Step 03 • Queued</div>
+<div class="text-xs font-medium text-on-surface">3. Verified Cohort</div>
+</div>
+</div>
+<span class="text-[11px] font-mono text-secondary-fixed">Pending Review</span>
+</div>
+</div>
+</section>
+<!-- Exception Resolution Hub -->
+<section class="space-y-4">
+<!-- Attention Banner Card -->
+<div class="p-6 rounded-xl bg-surface-container-high shadow-lg relative overflow-hidden flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-error-container/50 text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">priority_high</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<h2 class="text-base font-medium text-on-surface font-headline">3 Records Require Attention</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant text-[11px] font-mono">Pre-seating solver lock</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed max-w-2xl">
+            These candidates have conflicting exam schedules, incomplete identifier metadata, or unmapped accessibility requirements that impede automated seating allocation.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-3 self-end sm:self-center">
+<button class="px-3.5 py-2 rounded-lg bg-surface-container hover:bg-surface-bright text-xs font-medium text-on-surface transition-colors flex items-center gap-1.5" id="resolve-all-btn" type="button">
+<span class="material-symbols-outlined text-sm text-tertiary">bolt</span>
+<span>Apply Recommended Fixes</span>
+</button>
+</div>
+</div>
+<!-- Clean Exception Table Card -->
+<div class="rounded-xl bg-surface-container p-5 shadow-md">
+<div class="flex items-center justify-between pb-4">
+<div class="flex items-center gap-2">
+<span class="text-xs font-mono uppercase text-on-surface-variant tracking-wider">Exception Registry</span>
+<span class="text-xs text-secondary-fixed font-mono">• Real-time Validation Engine</span>
+</div>
+<span class="text-xs font-mono text-primary font-medium" id="exception-counter">3 of 3 unresolved</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="text-[11px] font-mono text-on-surface-variant uppercase tracking-wider bg-surface-container-low/70">
+<th class="py-3 px-4 rounded-l-lg font-medium">Student / Identity</th>
+<th class="py-3 px-4 font-medium">Enrolled Course(s)</th>
+<th class="py-3 px-4 font-medium">Conflict Diagnosis</th>
+<th class="py-3 px-4 font-medium">Severity</th>
+<th class="py-3 px-4 text-right rounded-r-lg font-medium">Action Resolution</th>
+</tr>
+</thead>
+<tbody class="text-xs divide-y-0 space-y-2">
+<!-- Row 1: Double Exam Clash -->
+<tr class="bg-surface-container-low hover:bg-surface-container-high transition-colors group" id="row-chen">
+<td class="py-4 px-4 rounded-l-lg">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-[11px] font-medium text-primary">
+                    MC
+                  </div>
+<div>
+<div class="font-medium text-on-surface">Marcus Chen</div>
+<div class="text-[11px] font-mono text-on-surface-variant">SID-8802914 • Year 3</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-mono text-[11px]">CS301</span>
+<span class="text-secondary">&</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-mono text-[11px]">EE204</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="text-on-surface font-medium">Double Exam Clash</span>
+<span class="text-[11px] font-mono text-on-surface-variant">(Slot A simultaneous)</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 rounded text-[11px] font-mono font-medium bg-error-container/40 text-on-error-container">
+                  Critical
+                </span>
+</td>
+<td class="py-4 px-4 text-right rounded-r-lg">
+<button class="px-3.5 py-1.5 rounded-md bg-primary text-on-primary hover:opacity-90 text-xs font-medium inline-flex items-center gap-1.5 transition-all shadow-sm" onclick="resolveRow('row-chen', 'Marcus Chen moved to Slot B successfully.')" type="button">
+<span class="material-symbols-outlined text-sm">schedule_send</span>
+<span>Move to Slot B</span>
+</button>
+</td>
+</tr>
+<!-- Row 2: Missing Student ID -->
+<tr class="bg-surface-container-low hover:bg-surface-container-high transition-colors group" id="row-patel">
+<td class="py-4 px-4 rounded-l-lg">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-[11px] font-medium text-primary">
+                    SP
+                  </div>
+<div>
+<div class="font-medium text-on-surface">Sophia Patel</div>
+<div class="text-[11px] font-mono text-error flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">help</span>
+<span>Missing Student ID</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-mono text-[11px]">MATH201</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="text-on-surface font-medium">Identifier Incomplete</span>
+<span class="text-[11px] font-mono text-on-surface-variant">(Unmapped candidate key)</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 rounded text-[11px] font-mono font-medium bg-surface-container-highest text-secondary-fixed">
+                  Medium
+                </span>
+</td>
+<td class="py-4 px-4 text-right rounded-r-lg">
+<button class="px-3.5 py-1.5 rounded-md bg-surface-container-high hover:bg-surface-bright text-on-surface text-xs font-medium inline-flex items-center gap-1.5 transition-all" onclick="openEditIdModal()" type="button">
+<span class="material-symbols-outlined text-sm text-primary">edit</span>
+<span>Edit ID</span>
+</button>
+</td>
+</tr>
+<!-- Row 3: Wheelchair Accessibility -->
+<tr class="bg-surface-container-low hover:bg-surface-container-high transition-colors group" id="row-vance">
+<td class="py-4 px-4 rounded-l-lg">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-[11px] font-medium text-tertiary">
+                    DV
+                  </div>
+<div>
+<div class="font-medium text-on-surface">Devon Vance</div>
+<div class="text-[11px] font-mono text-on-surface-variant">SID-9104720 • Year 1</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-mono text-[11px]">PHY102</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="text-on-surface font-medium">Wheelchair Accessibility</span>
+<span class="text-[11px] font-mono text-on-surface-variant">(Special accommodations)</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 rounded text-[11px] font-mono font-medium bg-surface-container-highest text-secondary-fixed">
+                  High Req
+                </span>
+</td>
+<td class="py-4 px-4 text-right rounded-r-lg">
+<button class="px-3.5 py-1.5 rounded-md bg-tertiary text-on-tertiary hover:opacity-90 text-xs font-medium inline-flex items-center gap-1.5 transition-all shadow-sm" onclick="resolveRow('row-vance', 'Assigned Devon Vance to Ground Venue (Hall G-101).')" type="button">
+<span class="material-symbols-outlined text-sm">accessible_forward</span>
+<span>Assign Ground Venue</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Live Feedback Notification Container -->
+<div class="hidden mt-4 p-3 rounded-lg bg-tertiary/15 text-tertiary text-xs font-mono flex items-center gap-2 transition-all" id="status-toast">
+<span class="material-symbols-outlined text-base">check_circle</span>
+<span id="status-message">Action resolved successfully.</span>
+</div>
+</div>
+</section>
+<!-- Collapsible Verified Cohorts Summary Section -->
+<section class="space-y-4">
+<div class="p-6 rounded-xl bg-surface-container shadow-md">
+<!-- Section Toggle & Heading -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<div class="flex items-center gap-3">
+<h3 class="text-lg font-semibold tracking-tight text-on-surface font-headline">
+              Verified Cohorts Summary
+            </h3>
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary/10 text-tertiary font-mono text-[11px] font-medium">
+              1,412 Ready for Assignment
+            </span>
+</div>
+<p class="text-xs text-on-surface-variant mt-1">
+            Pre-flight checklist complete. Distribution across enrolled courses ready for automated layout allocation.
+          </p>
+</div>
+<!-- Quick Filter Course Pills -->
+<div class="flex flex-wrap items-center gap-2">
+<div class="px-3 py-1 rounded-full bg-surface-container-high text-xs text-on-surface font-mono flex items-center gap-2">
+<span class="font-medium text-primary">CS301</span>
+<span class="text-on-surface-variant font-normal">420 seats</span>
+</div>
+<div class="px-3 py-1 rounded-full bg-surface-container-high text-xs text-on-surface font-mono flex items-center gap-2">
+<span class="font-medium text-primary">MATH201</span>
+<span class="text-on-surface-variant font-normal">380 seats</span>
+</div>
+<div class="px-3 py-1 rounded-full bg-surface-container-high text-xs text-on-surface font-mono flex items-center gap-2">
+<span class="font-medium text-primary">EE204</span>
+<span class="text-on-surface-variant font-normal">310 seats</span>
+</div>
+<div class="px-3 py-1 rounded-full bg-surface-container-high text-xs text-on-surface font-mono flex items-center gap-2">
+<span class="font-medium text-primary">PHY102</span>
+<span class="text-on-surface-variant font-normal">302 seats</span>
+</div>
+</div>
+</div>
+<!-- Cohort Mini Metric Visualizer -->
+<div class="mt-6 pt-5 grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="p-3.5 rounded-lg bg-surface-container-low">
+<span class="text-[10px] font-mono uppercase text-on-surface-variant tracking-wider">Total Enrollment</span>
+<div class="text-xl font-semibold text-on-surface mt-1">1,415</div>
+<div class="text-[11px] text-tertiary flex items-center gap-1 mt-0.5 font-mono">
+<span>99.78%</span>
+<span class="text-on-surface-variant">clean parsing</span>
+</div>
+</div>
+<div class="p-3.5 rounded-lg bg-surface-container-low">
+<span class="text-[10px] font-mono uppercase text-on-surface-variant tracking-wider">Classroom Nodes</span>
+<div class="text-xl font-semibold text-on-surface mt-1">28 Halls</div>
+<div class="text-[11px] text-on-surface-variant mt-0.5 font-mono">Cap: 1,640 available</div>
+</div>
+<div class="p-3.5 rounded-lg bg-surface-container-low">
+<span class="text-[10px] font-mono uppercase text-on-surface-variant tracking-wider">Accommodations</span>
+<div class="text-xl font-semibold text-on-surface mt-1">14 Flagged</div>
+<div class="text-[11px] text-on-surface-variant mt-0.5 font-mono">13 resolved • 1 active</div>
+</div>
+<div class="p-3.5 rounded-lg bg-surface-container-low">
+<span class="text-[10px] font-mono uppercase text-on-surface-variant tracking-wider">Estimated Time</span>
+<div class="text-xl font-semibold text-on-surface mt-1">1.2s</div>
+<div class="text-[11px] text-on-surface-variant mt-0.5 font-mono">Solver execution est.</div>
+</div>
+</div>
+<!-- Searchable Preview Sub-Section -->
+<div class="mt-6">
+<div class="flex flex-col sm:flex-row items-center justify-between gap-3 mb-3">
+<div class="flex items-center gap-2">
+<span class="text-xs font-mono text-on-surface font-medium uppercase tracking-wider">Verified Candidate Preview</span>
+<span class="text-[11px] font-mono text-on-surface-variant">(Showing first 5 of 1,412 records)</span>
+</div>
+<div class="relative w-full sm:w-64">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-xs text-on-surface-variant">search</span>
+<input class="w-full pl-8 pr-3 py-1.5 bg-surface-container-low rounded-md text-xs text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:bg-surface-container-high transition-colors font-mono" id="student-search" onkeyup="filterPreview()" placeholder="Search by name or roll number..." type="text"/>
+</div>
+</div>
+<!-- Mini Preview Table -->
+<div class="overflow-x-auto rounded-lg bg-surface-container-low">
+<table class="w-full text-left text-xs font-mono">
+<thead>
+<tr class="text-[11px] text-on-surface-variant uppercase bg-surface-container-highest/60">
+<th class="py-2.5 px-4 font-medium">Roll Number</th>
+<th class="py-2.5 px-4 font-medium">Candidate Name</th>
+<th class="py-2.5 px-4 font-medium">Primary Course</th>
+<th class="py-2.5 px-4 font-medium">Assigned Slot</th>
+<th class="py-2.5 px-4 font-medium">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface" id="preview-tbody">
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-2.5 px-4 text-primary">SID-880142</td>
+<td class="py-2.5 px-4 font-body font-medium">Aaliyah Morrison</td>
+<td class="py-2.5 px-4">CS301</td>
+<td class="py-2.5 px-4">Slot A (09:00 - 11:30)</td>
+<td class="py-2.5 px-4">
+<span class="inline-flex items-center gap-1 text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                    Verified
+                  </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-2.5 px-4 text-primary">SID-880199</td>
+<td class="py-2.5 px-4 font-body font-medium">Alexander Wright</td>
+<td class="py-2.5 px-4">MATH201</td>
+<td class="py-2.5 px-4">Slot A (09:00 - 11:30)</td>
+<td class="py-2.5 px-4">
+<span class="inline-flex items-center gap-1 text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                    Verified
+                  </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-2.5 px-4 text-primary">SID-880234</td>
+<td class="py-2.5 px-4 font-body font-medium">Elena Rostova</td>
+<td class="py-2.5 px-4">EE204</td>
+<td class="py-2.5 px-4">Slot B (13:00 - 15:30)</td>
+<td class="py-2.5 px-4">
+<span class="inline-flex items-center gap-1 text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                    Verified
+                  </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-2.5 px-4 text-primary">SID-880312</td>
+<td class="py-2.5 px-4 font-body font-medium">Jordan Kalu</td>
+<td class="py-2.5 px-4">PHY102</td>
+<td class="py-2.5 px-4">Slot A (09:00 - 11:30)</td>
+<td class="py-2.5 px-4">
+<span class="inline-flex items-center gap-1 text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                    Verified
+                  </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-2.5 px-4 text-primary">SID-880405</td>
+<td class="py-2.5 px-4 font-body font-medium">Mei-Ling Zhou</td>
+<td class="py-2.5 px-4">CS301</td>
+<td class="py-2.5 px-4">Slot B (13:00 - 15:30)</td>
+<td class="py-2.5 px-4">
+<span class="inline-flex items-center gap-1 text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                    Verified
+                  </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<!-- Edit ID Modal Mockup (Controlled via Vanilla JS) -->
+<div class="fixed inset-0 bg-background/80 backdrop-blur-sm z-50 hidden items-center justify-center p-4" id="id-modal">
+<div class="bg-surface-container-high max-w-md w-full rounded-xl p-6 shadow-2xl space-y-4">
+<div class="flex items-center justify-between">
+<h4 class="text-base font-semibold text-on-surface">Update Student Identifier</h4>
+<button class="text-on-surface-variant hover:text-on-surface" onclick="closeEditIdModal()" type="button">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+        Assign a unique student matriculation identifier for <span class="text-on-surface font-medium">Sophia Patel</span> to permit seating enrollment in MATH201.
+      </p>
+<div class="space-y-1.5">
+<label class="text-[11px] font-mono text-on-surface-variant uppercase">Student ID / Roll Code</label>
+<input class="w-full px-3 py-2 bg-surface-container-low rounded-lg text-xs font-mono text-on-surface focus:outline-none focus:bg-surface-container-highest" id="manual-sid-input" type="text" value="SID-880943"/>
+</div>
+<div class="flex justify-end gap-2.5 pt-2">
+<button class="px-4 py-2 rounded-lg bg-surface-container text-xs text-on-surface hover:bg-surface-container-highest transition-colors" onclick="closeEditIdModal()" type="button">
+          Cancel
+        </button>
+<button class="px-4 py-2 rounded-lg bg-primary text-on-primary text-xs font-semibold hover:opacity-90 transition-opacity" onclick="saveStudentId()" type="button">
+          Save & Validate
+        </button>
+</div>
+</div>
+</div>
+<!-- Interactive Logic -->
+<script>
+    let unresolvedCount = 3;
+
+    function showToast(msg) {
+      const toast = document.getElementById('status-toast');
+      const text = document.getElementById('status-message');
+      if (toast && text) {
+        text.innerText = msg;
+        toast.classList.remove('hidden');
+        setTimeout(() => {
+          toast.classList.add('hidden');
+        }, 3500);
+      }
+    }
+
+    function updateCounter() {
+      const counter = document.getElementById('exception-counter');
+      if (counter) {
+        if (unresolvedCount > 0) {
+          counter.innerText = `${unresolvedCount} of 3 unresolved`;
+        } else {
+          counter.innerText = `All exceptions resolved (0 pending)`;
+          counter.classList.remove('text-primary');
+          counter.classList.add('text-tertiary');
+        }
+      }
+
+      const commitBtn = document.getElementById('commit-btn');
+      if (commitBtn && unresolvedCount === 0) {
+        commitBtn.classList.remove('opacity-90');
+        commitBtn.classList.add('animate-pulse');
+      }
+    }
+
+    function resolveRow(rowId, message) {
+      const row = document.getElementById(rowId);
+      if (row) {
+        row.style.opacity = '0.3';
+        row.style.pointerEvents = 'none';
+        const actionBtn = row.querySelector('button');
+        if (actionBtn) {
+          actionBtn.outerHTML = '<span class="text-tertiary font-mono text-xs flex items-center justify-end gap-1"><span class="material-symbols-outlined text-sm">done_all</span> Resolved</span>';
+        }
+        unresolvedCount = Math.max(0, unresolvedCount - 1);
+        updateCounter();
+        showToast(message);
+      }
+    }
+
+    function openEditIdModal() {
+      const modal = document.getElementById('id-modal');
+      if (modal) modal.classList.remove('hidden'), modal.classList.add('flex');
+    }
+
+    function closeEditIdModal() {
+      const modal = document.getElementById('id-modal');
+      if (modal) modal.classList.add('hidden'), modal.classList.remove('flex');
+    }
+
+    function saveStudentId() {
+      const input = document.getElementById('manual-sid-input');
+      const val = input ? input.value : 'SID-880943';
+      closeEditIdModal();
+      resolveRow('row-patel', `Student ID ${val} assigned to Sophia Patel.`);
+    }
+
+    document.getElementById('resolve-all-btn')?.addEventListener('click', () => {
+      resolveRow('row-chen', 'Marcus Chen moved to Slot B.');
+      resolveRow('row-patel', 'Assigned temporary identifier SID-880943 to Sophia Patel.');
+      resolveRow('row-vance', 'Assigned Devon Vance to Ground Venue (Hall G-101).');
+      showToast('All 3 exceptions resolved sequentially.');
+    });
+
+    function filterPreview() {
+      const query = document.getElementById('student-search').value.toLowerCase();
+      const rows = document.querySelectorAll('#preview-tbody tr');
+      rows.forEach(r => {
+        const text = r.innerText.toLowerCase();
+        r.style.display = text.includes(query) ? '' : 'none';
+      });
+    }
+  </script>
+</div></main></div></body></html>

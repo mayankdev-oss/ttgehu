@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {"darkMode":"class","theme":{"extend":{"colors":{"on-error":"#1a0000","primary":"#a78bfa","secondary-fixed-dim":"#71717a","secondary-container":"#27272a","tertiary":"#34d399","error":"#ef4444","surface-container-lowest":"#09090b","surface-tint":"#a78bfa","on-error-container":"#fca5a5","secondary-fixed":"#a1a1aa","on-background":"#fafafa","tertiary-fixed-dim":"#6ee7b7","inverse-primary":"#5b21b6","secondary":"#71717a","on-primary":"#0a0012","surface-dim":"#0c0c0f","background":"#09090b","on-primary-container":"#ede9fe","on-primary-fixed-variant":"#5b21b6","surface-bright":"#18181b","inverse-surface":"#fafafa","on-secondary-fixed":"#18181b","on-secondary-fixed-variant":"#3f3f46","on-primary-fixed":"#2e1065","on-tertiary-fixed-variant":"#047857","surface-container-high":"#18181b","primary-container":"#7c3aed","on-tertiary-fixed":"#003318","primary-fixed":"#ede9fe","surface-container-highest":"#1e1e22","outline":"#52525b","error-container":"#3b1111","tertiary-fixed":"#bbf7d0","primary-fixed-dim":"#c4b5fd","surface":"#0c0c0f","on-secondary-container":"#a1a1aa","outline-variant":"#27272a","surface-container":"#121215","inverse-on-surface":"#09090b","on-secondary":"#09090b","on-tertiary":"#001a12","on-surface":"#fafafa","surface-container-low":"#0f0f12","surface-variant":"#18181b","tertiary-container":"#065f46","on-surface-variant":"#a1a1aa","on-tertiary-container":"#bbf7d0"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{},"fontFamily":{"headline":["Geist"],"display":["Geist"],"body":["Geist"],"label":["Geist"]},"fontSize":{}}}}</script></head><body class="bg-background font-body text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest border-r border-outline-variant z-50 flex flex-col justify-between p-5"><div class="flex flex-col gap-8"><div class="flex items-center justify-between px-2"><div class="flex items-center gap-3"><img alt="Brand logo. - Primary color: #4f46e5
+- Font: inter
+- Mode: light
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X75w7YKKGZL_5w3s6vGDl1a90uck0CRvplm9IoR-pZ2EkbTy-l2ioeiFEwoBnbAr7pEoFu3peg170eVKDiYHaQxK39Npp8srVjmoLYI0WBWI36R6nHvzm9Tj72eKKDq7wjzfHCfiO_ZHM99e1JFGF00yLiz3MkUymDV3TAEB_bR_7_Qt6acM_TKPaPYsejaB_EuuZcenQAgUjlrLHgWI0RLIQK6rSGLT802xHIQHFVy8JZlYc6GZEjscU"/><div class="flex flex-col"><span class="text-sm font-semibold tracking-tight text-on-surface font-headline">ProctorGrid</span><span class="text-[10px] text-on-surface-variant font-mono tracking-wide">v2.4.0-core</span></div></div></div><nav class="flex flex-col gap-1.5" data-active-classes="bg-secondary-container text-on-surface font-medium border-l-2 border-primary"><a class="flex items-center gap-3 px-3 py-2 text-sm rounded-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[18px]">space_dashboard</span><span>Dashboard</span></a><a aria-current="page" class="flex items-center gap-3 px-3 py-2 rounded-md transition-all bg-secondary-container text-on-surface font-medium border-l-2 border-primary" data-path="classrooms" href="#"><span class="material-symbols-outlined text-[18px]">meeting_room</span><span>Classrooms</span></a><a class="flex items-center gap-3 px-3 py-2 text-sm rounded-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="exam-sessions" href="#"><span class="material-symbols-outlined text-[18px]">event_available</span><span>Exam Sessions</span></a><a class="flex items-center gap-3 px-3 py-2 text-sm rounded-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="students" href="#"><span class="material-symbols-outlined text-[18px]">school</span><span>Students</span></a><a class="flex items-center gap-3 px-3 py-2 text-sm rounded-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="teachers" href="#"><span class="material-symbols-outlined text-[18px]">supervisor_account</span><span>Teachers</span></a><a class="flex items-center gap-3 px-3 py-2 text-sm rounded-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[18px]">tune</span><span>Settings</span></a></nav></div><div class="p-3 bg-surface-container rounded-lg border border-outline-variant flex items-center justify-between"><div class="flex items-center gap-2.5"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><div class="flex flex-col"><span class="text-xs font-medium text-on-surface">Proctor Engine</span><span class="text-[10px] text-on-surface-variant font-mono">Operational · 99.9%</span></div></div><span class="material-symbols-outlined text-secondary text-base">verified</span></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md border-b border-outline-variant z-40 flex items-center justify-between px-8"><div class="flex items-center gap-3"><div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container border border-outline-variant rounded-md cursor-pointer hover:border-outline transition-colors"><span class="material-symbols-outlined text-primary text-sm">calendar_today</span><span class="text-xs font-mono font-medium text-on-surface">Fall 2025 Midterms · Slot A</span><span class="material-symbols-outlined text-on-surface-variant text-sm">expand_more</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 bg-error-container/40 border border-error/20 rounded text-[11px] font-mono font-medium text-on-error-container"><span class="material-symbols-outlined text-xs text-error">warning</span><span>2 Conflicts</span></div></div><div class="flex items-center gap-4"><div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container rounded-md border border-outline-variant text-on-surface-variant text-xs font-mono"><span class="material-symbols-outlined text-sm">search</span><span>Search operational indices...</span><span class="px-1.5 py-0.5 rounded bg-surface-container-high border border-outline-variant text-[10px]">⌘K</span></div><button class="flex items-center gap-1.5 px-3 py-1.5 rounded-md border border-outline-variant hover:bg-surface-container text-xs font-medium text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-sm">ios_share</span><span>Export</span></button><div class="h-4 w-px bg-outline-variant"></div><div class="flex items-center gap-2.5 cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida/AEtjO1VHuqoeqmd7Cu4xMBD-x5dBhjjgWnUS7surSucuEs3VtnKXHqB6cYLHjm3wuYJ3tXPm2fMH2l1jVW5BU1UCk3mM6Uvc4Qqgs6zRAGs6nPCdgki76LcNoRV07-eI9FsIgJoaNOcgibFTKKF39MJu-XGDjbJiRgFagWbL_lTgrCBtNjsQ2H8Etf1pU7yweEF8fS33wJQkGneZzBuVUbpr9OfoIRgTmbXkcmOJJRQxI-jkDoFheubvidZRYkc"/><div class="flex flex-col text-left"><span class="text-xs font-medium text-on-surface leading-tight">Operations Lead</span><span class="text-[10px] text-on-surface-variant leading-tight">Proctor Center</span></div></div></div></header><main class="w-full pt-16 px-8 min-h-screen bg-background"><div class="flex flex-col w-full pb-14 gap-8">
+<!-- Subtle Ambient Glow Behind Blueprint Canvas -->
+<div class="relative w-full">
+<div class="absolute -top-16 left-1/3 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-48 right-10 w-80 h-80 bg-tertiary/5 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- Header & Action Row -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-5 pt-2">
+<div class="space-y-1.5">
+<div class="flex items-center gap-2.5">
+<span class="px-2 py-0.5 rounded text-[11px] font-mono uppercase tracking-widest bg-surface-container-high text-primary font-semibold">Campus Infrastructure</span>
+<span class="text-xs text-secondary-fixed">/</span>
+<span class="text-xs font-mono text-on-surface-variant">Zone B · Building 03</span>
+</div>
+<h1 class="text-2xl md:text-3xl font-semibold tracking-tight text-on-surface">Classrooms & Venues</h1>
+<p class="text-sm text-on-surface-variant max-w-xl leading-relaxed">Configure examination halls, acoustic profiles, spatial distances, and secure seating topologies.</p>
+</div>
+<div class="flex items-center gap-3">
+<button class="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface text-xs font-medium transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[17px] text-primary">straighten</span>
+<span>Global Spacing Rules</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-on-primary font-medium text-xs hover:opacity-95 transition-all shadow-md" type="button">
+<span class="material-symbols-outlined text-[17px]">add</span>
+<span>New Classroom</span>
+</button>
+</div>
+</div>
+<!-- Segmented Navigation & Mode Bar -->
+<div class="mt-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-1.5 bg-surface-container-lowest rounded-xl">
+<div class="flex items-center gap-1.5" role="tablist">
+<button class="flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-medium text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-base">domain</span>
+<span>All Venues</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-[10px] font-mono text-on-surface-variant">14</span>
+</button>
+<button class="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-surface-container-high text-xs font-medium text-on-surface shadow-sm" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span>Layout Designer</span>
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary text-[10px] font-mono font-semibold">Active: Hall 301</span>
+</button>
+</div>
+<div class="flex items-center gap-2 px-2 text-xs text-on-surface-variant">
+<span class="flex items-center gap-1 text-[11px] font-mono">
+<span class="material-symbols-outlined text-[15px] text-tertiary">check_circle</span>
+<span>Acoustic Isolation: Confirmed</span>
+</span>
+<span class="text-secondary-fixed">·</span>
+<span class="text-[11px] font-mono text-on-surface-variant">Auto-Save: 14s ago</span>
+</div>
+</div>
+<!-- Main Workspace: Config Sidebar + Architectural Blueprint Visualizer -->
+<div class="mt-6 grid grid-cols-1 xl:grid-cols-12 gap-6 items-start">
+<!-- Left Config Panel (~320-340px) -->
+<aside class="xl:col-span-4 2xl:col-span-3 flex flex-col gap-5 p-5 bg-surface-container rounded-xl shadow-sm">
+<div class="flex items-start justify-between">
+<div>
+<span class="text-[10px] font-mono text-primary uppercase tracking-wider font-semibold">Configuration Matrix</span>
+<h2 class="text-base font-semibold text-on-surface tracking-tight mt-0.5">Hall 301 — Main Hall</h2>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary-fixed text-[11px] font-mono">ID: H301-M</span>
+</div>
+<!-- Layout Style Segmented Pills -->
+<div class="space-y-2">
+<label class="text-xs font-medium text-on-surface-variant flex items-center justify-between">
+<span>Seating Topology</span>
+<span class="text-[10px] text-secondary font-mono">v4.2</span>
+</label>
+<div class="grid grid-cols-2 gap-1.5 p-1 bg-surface-container-low rounded-lg">
+<button class="flex items-center justify-center gap-1.5 py-1.5 px-2 rounded-md bg-surface-container-highest text-primary text-xs font-medium shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-sm">grid_view</span>
+<span>Standard Grid</span>
+</button>
+<button class="flex items-center justify-center gap-1.5 py-1.5 px-2 rounded-md text-on-surface-variant hover:text-on-surface text-xs font-medium transition-all" type="button">
+<span class="material-symbols-outlined text-sm">stadium</span>
+<span>Amphitheater</span>
+</button>
+</div>
+</div>
+<!-- Sliders & Dimension Matrix -->
+<div class="space-y-4 pt-1">
+<!-- Rows -->
+<div class="space-y-1.5">
+<div class="flex justify-between items-center text-xs">
+<span class="text-on-surface-variant font-medium">Rows (A – F)</span>
+<span class="font-mono font-medium text-on-surface bg-surface-container-high px-2 py-0.5 rounded" id="rowCountLabel">6 Rows</span>
+</div>
+<input class="w-full h-1.5 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-primary" id="rowsSlider" max="8" min="4" type="range" value="6"/>
+</div>
+<!-- Columns -->
+<div class="space-y-1.5">
+<div class="flex justify-between items-center text-xs">
+<span class="text-on-surface-variant font-medium">Columns (1 – 10)</span>
+<span class="font-mono font-medium text-on-surface bg-surface-container-high px-2 py-0.5 rounded" id="colCountLabel">10 Desks</span>
+</div>
+<input class="w-full h-1.5 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-primary" id="colsSlider" max="12" min="6" type="range" value="10"/>
+</div>
+<!-- Seat Pitch -->
+<div class="space-y-1.5">
+<div class="flex justify-between items-center text-xs">
+<span class="text-on-surface-variant font-medium">Exam Seat Pitch</span>
+<span class="font-mono text-tertiary font-medium bg-tertiary-container/30 text-on-tertiary-container px-2 py-0.5 rounded">1.50 m (Compliant)</span>
+</div>
+<input class="w-full h-1.5 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-primary" max="2.4" min="1.0" step="0.1" type="range" value="1.5"/>
+</div>
+</div>
+<!-- Architectural Features & Guard Toggles -->
+<div class="space-y-2.5 pt-2">
+<span class="text-[11px] font-mono text-on-surface-variant uppercase tracking-wider">Exam Control Safeguards</span>
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low">
+<div class="flex flex-col">
+<span class="text-xs font-medium text-on-surface">Staggered Seating</span>
+<span class="text-[11px] text-on-surface-variant">Alternating diagonal desk spacing</span>
+</div>
+<button aria-checked="true" class="w-9 h-5 rounded-full bg-primary flex items-center p-0.5 cursor-pointer" role="switch" type="button">
+<span class="w-4 h-4 rounded-full bg-on-primary ml-auto shadow-sm"></span>
+</button>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low">
+<div class="flex flex-col">
+<span class="text-xs font-medium text-on-surface">Dual Proctor Stations</span>
+<span class="text-[11px] text-on-surface-variant">Primary dais + Rear roving post</span>
+</div>
+<button aria-checked="true" class="w-9 h-5 rounded-full bg-primary flex items-center p-0.5 cursor-pointer" role="switch" type="button">
+<span class="w-4 h-4 rounded-full bg-on-primary ml-auto shadow-sm"></span>
+</button>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low">
+<div class="flex flex-col">
+<span class="text-xs font-medium text-on-surface">Universal Accessibility</span>
+<span class="text-[11px] text-on-surface-variant">Min. 4 ADA aisle positions</span>
+</div>
+<button aria-checked="true" class="w-9 h-5 rounded-full bg-primary flex items-center p-0.5 cursor-pointer" role="switch" type="button">
+<span class="w-4 h-4 rounded-full bg-on-primary ml-auto shadow-sm"></span>
+</button>
+</div>
+</div>
+<!-- Venue Summary Card -->
+<div class="p-3.5 rounded-lg bg-surface-container-lowest space-y-2.5">
+<div class="flex justify-between items-center text-xs">
+<span class="text-on-surface-variant">Theoretical Net Area</span>
+<span class="font-mono text-on-surface">248.5 m²</span>
+</div>
+<div class="flex justify-between items-center text-xs">
+<span class="text-on-surface-variant">Emergency Exit Egress</span>
+<span class="font-mono text-tertiary">38s Cleared</span>
+</div>
+<div class="flex justify-between items-center text-xs">
+<span class="text-on-surface-variant">Proctor Sightline Index</span>
+<span class="font-mono text-primary font-medium">98.4% (Optimal)</span>
+</div>
+</div>
+<!-- Action CTA -->
+<div class="pt-2 flex flex-col gap-2">
+<button class="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg bg-primary text-on-primary font-medium text-xs hover:opacity-95 transition-opacity shadow-md" type="button">
+<span class="material-symbols-outlined text-[17px]">save</span>
+<span>Save Configuration</span>
+</button>
+<button class="w-full flex items-center justify-center gap-1.5 py-2 text-xs font-medium text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">history</span>
+<span>Restore Blueprint Baseline</span>
+</button>
+</div>
+</aside>
+<!-- Right Canvas: High-Precision Architectural Preview -->
+<section class="xl:col-span-8 2xl:col-span-9 flex flex-col gap-4">
+<!-- Canvas Toolbar & Telemetry Header -->
+<div class="flex flex-wrap items-center justify-between gap-3 px-4 py-3 bg-surface-container rounded-xl shadow-sm">
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high text-xs font-mono text-on-surface">
+<span class="material-symbols-outlined text-sm text-tertiary">verified_user</span>
+<span>Capacity: 60 Exam Desks</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high text-xs font-mono text-on-surface">
+<span class="material-symbols-outlined text-sm text-primary">fit_screen</span>
+<span>Spacing: 1.5m Verified</span>
+</div>
+<div class="hidden sm:flex items-center gap-1 text-[11px] font-mono text-secondary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span>ISO-23507 Compliant</span>
+</div>
+</div>
+<!-- Canvas Display Controls -->
+<div class="flex items-center gap-1.5">
+<button class="p-1.5 rounded-md bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-colors" title="Zoom In" type="button">
+<span class="material-symbols-outlined text-[18px]">zoom_in</span>
+</button>
+<button class="p-1.5 rounded-md bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-colors" title="Zoom Out" type="button">
+<span class="material-symbols-outlined text-[18px]">zoom_out</span>
+</button>
+<div class="w-px h-4 bg-surface-container-highest mx-1"></div>
+<button class="flex items-center gap-1 px-2.5 py-1.5 rounded-md bg-surface-container-high hover:bg-surface-container-highest text-xs font-medium text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">print</span>
+<span>PDF Sheet</span>
+</button>
+</div>
+</div>
+<!-- Architectural Blueprint Plan Canvas -->
+<div class="relative bg-surface-container rounded-xl p-6 sm:p-8 md:p-10 flex flex-col items-center overflow-x-auto shadow-md">
+<!-- Subtle Subtle CAD Matrix Grid Pattern Overlay -->
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none bg-[radial-gradient(#fafafa_1px,transparent_1px)] [background-size:16px_16px]"></div>
+<!-- Top Emergency Exits & Room North Orientation -->
+<div class="w-full max-w-4xl flex items-center justify-between pb-6 text-[10px] font-mono tracking-widest text-secondary-fixed uppercase">
+<div class="flex items-center gap-2 px-3 py-1 rounded bg-surface-container-lowest text-tertiary font-semibold">
+<span class="material-symbols-outlined text-xs">logout</span>
+<span>EMERGENCY EXIT 01 · N-W</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-primary">navigation</span>
+<span>TRUE NORTH</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1 rounded bg-surface-container-lowest text-tertiary font-semibold">
+<span class="material-symbols-outlined text-xs">logout</span>
+<span>EMERGENCY EXIT 02 · N-E</span>
+</div>
+</div>
+<!-- Front of Hall Marker: Instructor Stage / Dais -->
+<div class="w-full max-w-3xl flex flex-col items-center gap-2.5 mb-8">
+<div class="w-full p-3.5 rounded-lg bg-surface-container-lowest flex flex-col sm:flex-row items-center justify-between px-6 gap-3">
+<div class="flex items-center gap-3">
+<span class="p-1.5 rounded bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-base">co_present</span>
+</span>
+<div>
+<div class="text-xs font-semibold text-on-surface uppercase tracking-wider">Primary Instructor Dais & Presentation Stage</div>
+<div class="text-[10px] font-mono text-secondary-fixed">Elevated +0.45m · Clear acoustic cone</div>
+</div>
+</div>
+<!-- Biometric Proctor Station Badge -->
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-high text-tertiary text-xs font-mono">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span>Proctor Station [Station-Alpha]</span>
+<span class="material-symbols-outlined text-sm">fingerprint</span>
+</div>
+</div>
+<!-- Distance Safety Barrier Indicator -->
+<div class="w-full flex items-center justify-center gap-3">
+<div class="h-px bg-surface-container-highest flex-1"></div>
+<span class="text-[10px] font-mono uppercase tracking-widest text-secondary-fixed px-2 py-0.5 rounded bg-surface-container-lowest">2.4m Safe Proctor Clearance Zone</span>
+<div class="h-px bg-surface-container-highest flex-1"></div>
+</div>
+</div>
+<!-- Blueprint Layout: Aisle Pathways + Desk Matrix -->
+<div class="w-full max-w-4xl flex items-stretch justify-center gap-3 md:gap-5">
+<!-- Left Egress Corridor -->
+<div class="hidden sm:flex flex-col justify-between items-center py-8 px-2 rounded bg-surface-container-lowest text-secondary-fixed text-[10px] font-mono [writing-mode:vertical-rl] tracking-widest uppercase">
+<span class="rotate-180 flex items-center gap-1"><span class="material-symbols-outlined text-xs">arrow_upward</span> AISLE 1 (1.80m)</span>
+<span class="rotate-180">ADA EGRESS</span>
+</div>
+<!-- Desks Grid Container -->
+<div class="flex-1 overflow-x-auto py-2">
+<div class="min-w-[560px] flex flex-col gap-3.5" id="desksMatrixContainer">
+<!-- Row A -->
+<div class="flex items-center gap-2 justify-center">
+<span class="w-6 text-[11px] font-mono font-bold text-primary">A</span>
+<div class="grid grid-cols-10 gap-2 flex-1 max-w-2xl">
+<!-- Desk A1 (ADA Accessible) -->
+<div class="group relative p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">A1</span>
+<span class="material-symbols-outlined text-[13px] text-tertiary mt-0.5" title="Designated Wheelchair Accessible">accessible</span>
+<!-- Tooltip -->
+<div class="absolute -top-8 hidden group-hover:flex px-2 py-1 bg-surface-container-highest text-[10px] font-mono text-on-surface rounded shadow-md whitespace-nowrap z-20">ADA Compliant Desk A1</div>
+</div>
+<!-- Desks A2 to A9 -->
+<div class="group relative p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">A2</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="group relative p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">A3</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="group relative p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">A4</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="group relative p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">A5</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<!-- Center Aisle Gap in Layout -->
+<div class="group relative p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">A6</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="group relative p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">A7</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="group relative p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">A8</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="group relative p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">A9</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<!-- Desk A10 (ADA Accessible) -->
+<div class="group relative p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">A10</span>
+<span class="material-symbols-outlined text-[13px] text-tertiary mt-0.5" title="Designated Wheelchair Accessible">accessible</span>
+</div>
+</div>
+</div>
+<!-- Row B -->
+<div class="flex items-center gap-2 justify-center">
+<span class="w-6 text-[11px] font-mono font-bold text-primary">B</span>
+<div class="grid grid-cols-10 gap-2 flex-1 max-w-2xl">
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">B1</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">B2</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">B3</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">B4</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">B5</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">B6</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">B7</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">B8</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">B9</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">B10</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+</div>
+</div>
+<!-- Row C -->
+<div class="flex items-center gap-2 justify-center">
+<span class="w-6 text-[11px] font-mono font-bold text-primary">C</span>
+<div class="grid grid-cols-10 gap-2 flex-1 max-w-2xl">
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">C1</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">C2</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">C3</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">C4</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">C5</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">C6</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">C7</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">C8</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">C9</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">C10</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+</div>
+</div>
+<!-- Mid-hall Inspection Walkway Aisle -->
+<div class="flex items-center gap-2 justify-center py-1">
+<span class="w-6"></span>
+<div class="flex-1 max-w-2xl flex items-center justify-between px-3 py-1 rounded bg-surface-container-lowest text-[10px] font-mono text-secondary-fixed">
+<span>--- CENTRAL INSPECTION AISLE (2.00M SEPARATION) ---</span>
+<span class="text-tertiary">SIGHTLINE CLEAR</span>
+</div>
+</div>
+<!-- Row D -->
+<div class="flex items-center gap-2 justify-center">
+<span class="w-6 text-[11px] font-mono font-bold text-primary">D</span>
+<div class="grid grid-cols-10 gap-2 flex-1 max-w-2xl">
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">D1</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">D2</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">D3</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">D4</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">D5</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">D6</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">D7</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">D8</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">D9</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">D10</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+</div>
+</div>
+<!-- Row E -->
+<div class="flex items-center gap-2 justify-center">
+<span class="w-6 text-[11px] font-mono font-bold text-primary">E</span>
+<div class="grid grid-cols-10 gap-2 flex-1 max-w-2xl">
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">E1</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">E2</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">E3</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">E4</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">E5</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">E6</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">E7</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">E8</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">E9</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">E10</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+</div>
+</div>
+<!-- Row F -->
+<div class="flex items-center gap-2 justify-center">
+<span class="w-6 text-[11px] font-mono font-bold text-primary">F</span>
+<div class="grid grid-cols-10 gap-2 flex-1 max-w-2xl">
+<!-- Desk F1 (ADA Accessible) -->
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">F1</span>
+<span class="material-symbols-outlined text-[13px] text-tertiary mt-0.5" title="Designated Wheelchair Accessible">accessible</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">F2</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">F3</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">F4</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">F5</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">F6</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">F7</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">F8</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">F9</span>
+<span class="text-[9px] font-mono text-secondary-fixed">LAN</span>
+</div>
+<!-- Desk F10 (ADA Accessible) -->
+<div class="p-2 rounded-md bg-surface-container-high hover:bg-surface-container-highest flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<span class="text-[10px] font-mono font-medium text-on-surface">F10</span>
+<span class="material-symbols-outlined text-[13px] text-tertiary mt-0.5" title="Designated Wheelchair Accessible">accessible</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Egress Corridor -->
+<div class="hidden sm:flex flex-col justify-between items-center py-8 px-2 rounded bg-surface-container-lowest text-secondary-fixed text-[10px] font-mono [writing-mode:vertical-rl] tracking-widest uppercase">
+<span class="rotate-180 flex items-center gap-1"><span class="material-symbols-outlined text-xs">arrow_upward</span> AISLE 2 (1.80m)</span>
+<span class="rotate-180">ADA EGRESS</span>
+</div>
+</div>
+<!-- Rear Proctoring Station & Storage Zone -->
+<div class="w-full max-w-3xl mt-8 pt-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-on-surface-variant">
+<div class="flex items-center gap-2 p-2.5 rounded bg-surface-container-lowest px-4 w-full sm:w-auto">
+<span class="material-symbols-outlined text-base text-primary">videocam</span>
+<span class="font-mono text-[11px]">Proctor Roving Point (Rear-02)</span>
+</div>
+<div class="flex items-center gap-4 text-[11px] font-mono">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-sm bg-surface-container-high"></span>
+<span>Exam Unit</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-tertiary">accessible</span>
+<span>ADA Station (4 total)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Surveillance 360°</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Venue Performance Metadata & Auxiliary Stats Strip -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="p-4 rounded-xl bg-surface-container flex items-center gap-3.5 shadow-sm">
+<div class="p-2.5 rounded-lg bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-xl">wifi_tethering</span>
+</div>
+<div class="space-y-0.5">
+<span class="text-xs text-on-surface-variant">Dedicated RF Density</span>
+<div class="text-sm font-semibold text-on-surface font-mono">60 Nodes · 5GHz Isol.</div>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container flex items-center gap-3.5 shadow-sm">
+<div class="p-2.5 rounded-lg bg-surface-container-high text-tertiary">
+<span class="material-symbols-outlined text-xl">air</span>
+</div>
+<div class="space-y-0.5">
+<span class="text-xs text-on-surface-variant">HVAC Circulation Index</span>
+<div class="text-sm font-semibold text-on-surface font-mono">14.2 ACH · Nominal</div>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container flex items-center gap-3.5 shadow-sm">
+<div class="p-2.5 rounded-lg bg-surface-container-high text-secondary-fixed">
+<span class="material-symbols-outlined text-xl">shield</span>
+</div>
+<div class="space-y-0.5">
+<span class="text-xs text-on-surface-variant">Anti-Cheating Clearance</span>
+<div class="text-sm font-semibold text-on-surface font-mono">Tier 1 Highest Rank</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for rows and cols labels in preview
+  const rowsSlider = document.getElementById('rowsSlider');
+  const colsSlider = document.getElementById('colsSlider');
+  const rowCountLabel = document.getElementById('rowCountLabel');
+  const colCountLabel = document.getElementById('colCountLabel');
+
+  if (rowsSlider && rowCountLabel) {
+    rowsSlider.addEventListener('input', (e) => {
+      rowCountLabel.textContent = `${e.target.value} Rows`;
+    });
+  }
+
+  if (colsSlider && colCountLabel) {
+    colsSlider.addEventListener('input', (e) => {
+      colCountLabel.textContent = `${e.target.value} Desks`;
+    });
+  }
+</script></main></div></body></html>

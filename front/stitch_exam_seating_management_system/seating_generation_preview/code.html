@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {"darkMode":"class","theme":{"extend":{"colors":{"on-error":"#1a0000","primary":"#a78bfa","secondary-fixed-dim":"#71717a","secondary-container":"#27272a","tertiary":"#34d399","error":"#ef4444","surface-container-lowest":"#09090b","surface-tint":"#a78bfa","on-error-container":"#fca5a5","secondary-fixed":"#a1a1aa","on-background":"#fafafa","tertiary-fixed-dim":"#6ee7b7","inverse-primary":"#5b21b6","secondary":"#71717a","on-primary":"#0a0012","surface-dim":"#0c0c0f","background":"#09090b","on-primary-container":"#ede9fe","on-primary-fixed-variant":"#5b21b6","surface-bright":"#18181b","inverse-surface":"#fafafa","on-secondary-fixed":"#18181b","on-secondary-fixed-variant":"#3f3f46","on-primary-fixed":"#2e1065","on-tertiary-fixed-variant":"#047857","surface-container-high":"#18181b","primary-container":"#7c3aed","on-tertiary-fixed":"#003318","primary-fixed":"#ede9fe","surface-container-highest":"#1e1e22","outline":"#52525b","error-container":"#3b1111","tertiary-fixed":"#bbf7d0","primary-fixed-dim":"#c4b5fd","surface":"#0c0c0f","on-secondary-container":"#a1a1aa","outline-variant":"#27272a","surface-container":"#121215","inverse-on-surface":"#09090b","on-secondary":"#09090b","on-tertiary":"#001a12","on-surface":"#fafafa","surface-container-low":"#0f0f12","surface-variant":"#18181b","tertiary-container":"#065f46","on-surface-variant":"#a1a1aa","on-tertiary-container":"#bbf7d0"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{},"fontFamily":{"headline":["Geist"],"display":["Geist"],"body":["Geist"],"label":["Geist"]},"fontSize":{}}}}</script></head><body class="bg-background font-body text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest border-r border-outline-variant z-50 flex flex-col justify-between p-5"><div class="flex flex-col gap-8"><div class="flex items-center justify-between px-2"><div class="flex items-center gap-3"><img alt="Brand logo. - Primary color: #4f46e5
+- Font: inter
+- Mode: light
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X75w7YKKGZL_5w3s6vGDl1a90uck0CRvplm9IoR-pZ2EkbTy-l2ioeiFEwoBnbAr7pEoFu3peg170eVKDiYHaQxK39Npp8srVjmoLYI0WBWI36R6nHvzm9Tj72eKKDq7wjzfHCfiO_ZHM99e1JFGF00yLiz3MkUymDV3TAEB_bR_7_Qt6acM_TKPaPYsejaB_EuuZcenQAgUjlrLHgWI0RLIQK6rSGLT802xHIQHFVy8JZlYc6GZEjscU"/><div class="flex flex-col"><span class="text-sm font-semibold tracking-tight text-on-surface font-headline">ProctorGrid</span><span class="text-[10px] text-on-surface-variant font-mono tracking-wide">v2.4.0-core</span></div></div></div><nav class="flex flex-col gap-1.5" data-active-classes="bg-secondary-container text-on-surface font-medium border-l-2 border-primary"><a class="flex items-center gap-3 px-3 py-2 text-sm rounded-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[18px]">space_dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2 text-sm rounded-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="classrooms" href="#"><span class="material-symbols-outlined text-[18px]">meeting_room</span><span>Classrooms</span></a><a aria-current="page" class="flex items-center gap-3 px-3 py-2 rounded-md transition-all bg-secondary-container text-on-surface font-medium border-l-2 border-primary" data-path="exam-sessions" href="#"><span class="material-symbols-outlined text-[18px]">event_available</span><span>Exam Sessions</span></a><a class="flex items-center gap-3 px-3 py-2 text-sm rounded-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="students" href="#"><span class="material-symbols-outlined text-[18px]">school</span><span>Students</span></a><a class="flex items-center gap-3 px-3 py-2 text-sm rounded-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="teachers" href="#"><span class="material-symbols-outlined text-[18px]">supervisor_account</span><span>Teachers</span></a><a class="flex items-center gap-3 px-3 py-2 text-sm rounded-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[18px]">tune</span><span>Settings</span></a></nav></div><div class="p-3 bg-surface-container rounded-lg border border-outline-variant flex items-center justify-between"><div class="flex items-center gap-2.5"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><div class="flex flex-col"><span class="text-xs font-medium text-on-surface">Proctor Engine</span><span class="text-[10px] text-on-surface-variant font-mono">Operational · 99.9%</span></div></div><span class="material-symbols-outlined text-secondary text-base">verified</span></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md border-b border-outline-variant z-40 flex items-center justify-between px-8"><div class="flex items-center gap-3"><div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container border border-outline-variant rounded-md cursor-pointer hover:border-outline transition-colors"><span class="material-symbols-outlined text-primary text-sm">calendar_today</span><span class="text-xs font-mono font-medium text-on-surface">Fall 2025 Midterms · Slot A</span><span class="material-symbols-outlined text-on-surface-variant text-sm">expand_more</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 bg-error-container/40 border border-error/20 rounded text-[11px] font-mono font-medium text-on-error-container"><span class="material-symbols-outlined text-xs text-error">warning</span><span>2 Conflicts</span></div></div><div class="flex items-center gap-4"><div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container rounded-md border border-outline-variant text-on-surface-variant text-xs font-mono"><span class="material-symbols-outlined text-sm">search</span><span>Search operational indices...</span><span class="px-1.5 py-0.5 rounded bg-surface-container-high border border-outline-variant text-[10px]">⌘K</span></div><button class="flex items-center gap-1.5 px-3 py-1.5 rounded-md border border-outline-variant hover:bg-surface-container text-xs font-medium text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-sm">ios_share</span><span>Export</span></button><div class="h-4 w-px bg-outline-variant"></div><div class="flex items-center gap-2.5 cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida/AEtjO1VHuqoeqmd7Cu4xMBD-x5dBhjjgWnUS7surSucuEs3VtnKXHqB6cYLHjm3wuYJ3tXPm2fMH2l1jVW5BU1UCk3mM6Uvc4Qqgs6zRAGs6nPCdgki76LcNoRV07-eI9FsIgJoaNOcgibFTKKF39MJu-XGDjbJiRgFagWbL_lTgrCBtNjsQ2H8Etf1pU7yweEF8fS33wJQkGneZzBuVUbpr9OfoIRgTmbXkcmOJJRQxI-jkDoFheubvidZRYkc"/><div class="flex flex-col text-left"><span class="text-xs font-medium text-on-surface leading-tight">Operations Lead</span><span class="text-[10px] text-on-surface-variant leading-tight">Proctor Center</span></div></div></div></header><main class="w-full pt-16 px-8 min-h-screen bg-background"><div class="flex flex-col w-full pb-14 space-y-7">
+<!-- Dynamic Atmospheric Glow Accent -->
+<div class="relative w-full">
+<div class="absolute -top-10 left-1/3 w-96 h-40 bg-primary/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute -top-12 right-1/4 w-80 h-36 bg-tertiary/5 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- Header & Action Row -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-5 bg-surface-container/60 backdrop-blur-md p-6 rounded-xl shadow-xl">
+<div class="space-y-1.5">
+<div class="flex items-center gap-3">
+<span class="text-[11px] font-mono tracking-wider uppercase px-2.5 py-0.5 rounded-full bg-surface-container-highest text-primary font-semibold">Engine V3 · Active Topology</span>
+<div class="flex items-center gap-1.5 text-xs text-on-surface-variant font-mono">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Sync Latency: 14ms</span>
+</div>
+</div>
+<h1 class="text-2xl lg:text-3xl font-headline font-bold text-on-surface tracking-tight">Seating Matrix & Allocations</h1>
+<div class="flex flex-wrap items-center gap-3 text-xs text-on-surface-variant pt-1 font-mono">
+<div class="flex items-center gap-2 bg-surface-container-high px-3 py-1.5 rounded-lg text-on-surface font-medium hover:bg-surface-container-highest cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-primary text-base">domain</span>
+<span>Hall 301 — Main Exam Hall (120 Seats)</span>
+<span class="material-symbols-outlined text-sm text-secondary">unfold_more</span>
+</div>
+<span class="text-secondary">•</span>
+<div class="flex items-center gap-1.5 bg-surface-container-high px-3 py-1.5 rounded-lg text-on-surface font-medium hover:bg-surface-container-highest cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-secondary text-base">schedule</span>
+<span>Slot A (09:00 - 12:00)</span>
+<span class="material-symbols-outlined text-sm text-secondary">expand_more</span>
+</div>
+<span class="text-secondary">•</span>
+<span class="text-secondary">Capacity: 120/120 Allocated</span>
+</div>
+</div>
+<!-- Action Utilities -->
+<div class="flex flex-wrap items-center gap-2.5">
+<div class="flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-high text-xs font-mono">
+<span class="inline-block w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span class="text-on-surface font-medium">Solver: Verified</span>
+<span class="text-on-error-container bg-error-container px-2 py-0.5 rounded text-[11px] font-semibold">1 Conflict</span>
+</div>
+<button class="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface-container-highest text-primary font-medium text-xs hover:bg-surface-bright transition-all shadow-sm" id="toggle-swap-btn">
+<span class="material-symbols-outlined text-base">sync_alt</span>
+<span>Swap Mode</span>
+<span class="text-[10px] px-1.5 py-0.5 rounded bg-primary-container text-on-primary font-mono">ON</span>
+</button>
+<button class="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-primary text-on-primary font-semibold text-xs hover:opacity-95 shadow-md shadow-primary/20 transition-all">
+<span class="material-symbols-outlined text-base">auto_fix_high</span>
+<span>Auto-Resolve</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest text-xs font-medium transition-all">
+<span class="material-symbols-outlined text-base">picture_as_pdf</span>
+<span>Export PDF</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Center Stage Canvas -->
+<div class="relative w-full bg-surface-container/70 backdrop-blur-sm rounded-2xl p-6 lg:p-10 shadow-2xl overflow-hidden">
+<!-- Spatial Reference Grid Marks -->
+<div class="absolute inset-0 bg-[radial-gradient(#27272a_1px,transparent_1px)] [background-size:24px_24px] opacity-25 pointer-events-none"></div>
+<!-- Dais / Instructor Podium Deck -->
+<div class="relative w-full max-w-2xl mx-auto mb-10">
+<div class="relative flex items-center justify-between px-6 py-3.5 rounded-xl bg-surface-container-high shadow-lg text-xs">
+<div class="flex items-center gap-3">
+<div class="w-2.5 h-2.5 rounded-full bg-tertiary"></div>
+<div>
+<span class="text-[10px] uppercase font-mono tracking-widest text-secondary block leading-tight">Dais / Front Stage</span>
+<span class="text-on-surface font-medium text-sm">Chief Invigilator: Dr. Elena Rostova</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container text-on-surface-variant text-[11px] font-mono">
+<span class="material-symbols-outlined text-sm text-tertiary">visibility</span>
+<span>Command Center 360°</span>
+</div>
+<span class="material-symbols-outlined text-secondary hover:text-on-surface cursor-pointer text-lg">videocam</span>
+</div>
+</div>
+<!-- Acoustic / Directional indicator -->
+<div class="h-1 w-3/4 mx-auto mt-2 bg-gradient-to-r from-transparent via-primary/30 to-transparent rounded-full"></div>
+</div>
+<!-- Interactive Floor Grid Viewport -->
+<div class="relative w-full overflow-x-auto pb-4">
+<div class="min-w-[940px] relative flex flex-col items-center">
+<!-- SVG Interactive Connectors (Bezier swap line & conflict radius) -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none z-20" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<lineargradient id="swapGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#a78bfa" stop-opacity="0.9"></stop>
+<stop offset="50%" stop-color="#c4b5fd" stop-opacity="1"></stop>
+<stop offset="100%" stop-color="#a78bfa" stop-opacity="0.9"></stop>
+</lineargradient>
+<filter height="140%" id="softGlow" width="140%" x="-20%" y="-20%">
+<fegaussianblur result="blur" stddeviation="3"></fegaussianblur>
+<fecomposite in="SourceGraphic" in2="blur" operator="over"></fecomposite>
+</filter>
+</defs>
+<!-- Subtle Curving Dashed Swap Line from B2 (approx x: 236, y: 114) to E8 (approx x: 742, y: 268) -->
+<path d="M 235 116 C 360 40, 620 340, 742 268" fill="none" filter="url(#softGlow)" stroke="url(#swapGradient)" stroke-dasharray="6 4" stroke-width="2.2"></path>
+<!-- Animated pulse dot travelling path -->
+<circle cx="235" cy="116" fill="#ede9fe" r="4"></circle>
+<circle cx="742" cy="268" fill="#a78bfa" r="4"></circle>
+</svg>
+<!-- Column Coordinate Headers -->
+<div class="grid grid-cols-11 gap-3 w-full max-w-4xl mb-3 text-center text-xs font-mono text-secondary">
+<span class="w-8"></span>
+<span>01</span>
+<span>02</span>
+<span>03</span>
+<span>04</span>
+<span>05</span>
+<span>06</span>
+<span>07</span>
+<span>08</span>
+<span>09</span>
+<span>10</span>
+</div>
+<!-- Seating Rows A through F -->
+<div class="space-y-3 w-full max-w-4xl">
+<!-- ROW A -->
+<div class="grid grid-cols-11 gap-3 items-center">
+<span class="text-xs font-mono font-bold text-secondary text-center w-8">A</span>
+<!-- A1 CS301 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">A1</span>
+<span class="w-2 h-2 rounded-full bg-primary" title="CS301"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">CS301</span>
+</div>
+<!-- A2 MATH201 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">A2</span>
+<span class="w-2 h-2 rounded-full bg-tertiary" title="MATH201"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">MATH201</span>
+</div>
+<!-- A3 PHY102 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">A3</span>
+<span class="w-2 h-2 rounded-full bg-sky-400" title="PHY102"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">PHY102</span>
+</div>
+<!-- A4 CS301 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">A4</span>
+<span class="w-2 h-2 rounded-full bg-primary" title="CS301"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">CS301</span>
+</div>
+<!-- A5 MATH201 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">A5</span>
+<span class="w-2 h-2 rounded-full bg-tertiary" title="MATH201"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">MATH201</span>
+</div>
+<!-- A6 PHY102 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">A6</span>
+<span class="w-2 h-2 rounded-full bg-sky-400" title="PHY102"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">PHY102</span>
+</div>
+<!-- A7 CS301 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">A7</span>
+<span class="w-2 h-2 rounded-full bg-primary" title="CS301"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">CS301</span>
+</div>
+<!-- A8 MATH201 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">A8</span>
+<span class="w-2 h-2 rounded-full bg-tertiary" title="MATH201"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">MATH201</span>
+</div>
+<!-- A9 Vacant -->
+<div class="group relative bg-surface-container-low/60 hover:bg-surface-container-high rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all opacity-60">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-secondary">A9</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<span class="text-[10px] text-secondary/60 font-mono">Vacant</span>
+</div>
+<!-- A10 PHY102 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">A10</span>
+<span class="w-2 h-2 rounded-full bg-sky-400" title="PHY102"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">PHY102</span>
+</div>
+</div>
+<!-- ROW B (Contains Active Swap Source B2) -->
+<div class="grid grid-cols-11 gap-3 items-center">
+<span class="text-xs font-mono font-bold text-secondary text-center w-8">B</span>
+<!-- B1 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">B1</span>
+<span class="w-2 h-2 rounded-full bg-tertiary" title="MATH201"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">MATH201</span>
+</div>
+<!-- B2 (ACTIVE SWAP SOURCE) -->
+<div class="group relative bg-primary-container/20 shadow-lg shadow-primary/20 rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all z-30 scale-105">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-primary-fixed font-bold">B2</span>
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-[10px] text-primary-fixed-dim font-mono font-semibold">CS301</span>
+<span class="text-[9px] bg-primary text-on-primary px-1 rounded font-mono uppercase">Origin</span>
+</div>
+</div>
+<!-- B3 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">B3</span>
+<span class="w-2 h-2 rounded-full bg-primary" title="CS301"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">CS301</span>
+</div>
+<!-- B4 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">B4</span>
+<span class="w-2 h-2 rounded-full bg-sky-400" title="PHY102"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">PHY102</span>
+</div>
+<!-- B5 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">B5</span>
+<span class="w-2 h-2 rounded-full bg-tertiary" title="MATH201"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">MATH201</span>
+</div>
+<!-- B6 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">B6</span>
+<span class="w-2 h-2 rounded-full bg-primary" title="CS301"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">CS301</span>
+</div>
+<!-- B7 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">B7</span>
+<span class="w-2 h-2 rounded-full bg-sky-400" title="PHY102"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">PHY102</span>
+</div>
+<!-- B8 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">B8</span>
+<span class="w-2 h-2 rounded-full bg-tertiary" title="MATH201"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">MATH201</span>
+</div>
+<!-- B9 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">B9</span>
+<span class="w-2 h-2 rounded-full bg-primary" title="CS301"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">CS301</span>
+</div>
+<!-- B10 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">B10</span>
+<span class="w-2 h-2 rounded-full bg-tertiary" title="MATH201"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">MATH201</span>
+</div>
+</div>
+<!-- ROW C -->
+<div class="grid grid-cols-11 gap-3 items-center">
+<span class="text-xs font-mono font-bold text-secondary text-center w-8">C</span>
+<!-- C1 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">C1</span>
+<span class="w-2 h-2 rounded-full bg-sky-400"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">PHY102</span>
+</div>
+<!-- C2 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">C2</span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">CS301</span>
+</div>
+<!-- C3 -->
+<div class="group relative bg-surface-container-low/60 hover:bg-surface-container-high rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all opacity-60">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-secondary">C3</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<span class="text-[10px] text-secondary/60 font-mono">Vacant</span>
+</div>
+<!-- C4 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">C4</span>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">MATH201</span>
+</div>
+<!-- C5 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">C5</span>
+<span class="w-2 h-2 rounded-full bg-sky-400"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">PHY102</span>
+</div>
+<!-- C6 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">C6</span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">CS301</span>
+</div>
+<!-- C7 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">C7</span>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">MATH201</span>
+</div>
+<!-- C8 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">C8</span>
+<span class="w-2 h-2 rounded-full bg-sky-400"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">PHY102</span>
+</div>
+<!-- C9 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">C9</span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">CS301</span>
+</div>
+<!-- C10 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">C10</span>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">MATH201</span>
+</div>
+</div>
+<!-- ROW D (CONTAINS HIGHLIGHTED CONFLICT AT D4 & D5) -->
+<div class="grid grid-cols-11 gap-3 items-center">
+<span class="text-xs font-mono font-bold text-secondary text-center w-8">D</span>
+<!-- D1 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">D1</span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">CS301</span>
+</div>
+<!-- D2 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">D2</span>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">MATH201</span>
+</div>
+<!-- D3 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">D3</span>
+<span class="w-2 h-2 rounded-full bg-sky-400"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">PHY102</span>
+</div>
+<!-- D4 CONFLICT DESK -->
+<div class="group relative bg-error-container/40 rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-lg shadow-error/20 z-20">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-error-container font-bold">D4</span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</div>
+<span class="text-[10px] text-error font-mono font-semibold">CS301</span>
+<!-- Tooltip connector badge -->
+<div class="absolute -top-7 left-1/2 -translate-x-1/2 whitespace-nowrap bg-error text-on-error text-[10px] font-mono font-bold px-2 py-0.5 rounded shadow-lg flex items-center gap-1 z-30">
+<span class="material-symbols-outlined text-xs">warning</span>
+<span>Same Exam Paper Adjacent</span>
+</div>
+</div>
+<!-- D5 CONFLICT DESK -->
+<div class="group relative bg-error-container/40 rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-lg shadow-error/20 z-20">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-error-container font-bold">D5</span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</div>
+<span class="text-[10px] text-error font-mono font-semibold">CS301</span>
+</div>
+<!-- D6 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">D6</span>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">MATH201</span>
+</div>
+<!-- D7 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">D7</span>
+<span class="w-2 h-2 rounded-full bg-sky-400"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">PHY102</span>
+</div>
+<!-- D8 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">D8</span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">CS301</span>
+</div>
+<!-- D9 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">D9</span>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">MATH201</span>
+</div>
+<!-- D10 -->
+<div class="group relative bg-surface-container-low/60 hover:bg-surface-container-high rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all opacity-60">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-secondary">D10</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<span class="text-[10px] text-secondary/60 font-mono">Vacant</span>
+</div>
+</div>
+<!-- ROW E (Contains Active Swap Target E8) -->
+<div class="grid grid-cols-11 gap-3 items-center">
+<span class="text-xs font-mono font-bold text-secondary text-center w-8">E</span>
+<!-- E1 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">E1</span>
+<span class="w-2 h-2 rounded-full bg-sky-400"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">PHY102</span>
+</div>
+<!-- E2 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">E2</span>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">MATH201</span>
+</div>
+<!-- E3 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">E3</span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">CS301</span>
+</div>
+<!-- E4 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">E4</span>
+<span class="w-2 h-2 rounded-full bg-sky-400"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">PHY102</span>
+</div>
+<!-- E5 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">E5</span>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">MATH201</span>
+</div>
+<!-- E6 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">E6</span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">CS301</span>
+</div>
+<!-- E7 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">E7</span>
+<span class="w-2 h-2 rounded-full bg-sky-400"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">PHY102</span>
+</div>
+<!-- E8 (ACTIVE SWAP TARGET) -->
+<div class="group relative bg-primary-container/20 shadow-lg shadow-primary/20 rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all z-30 scale-105">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-primary-fixed font-bold">E8</span>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-[10px] text-primary-fixed-dim font-mono font-semibold">MATH201</span>
+<span class="text-[9px] bg-tertiary-container text-on-tertiary-container px-1 rounded font-mono uppercase">Target</span>
+</div>
+</div>
+<!-- E9 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">E9</span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">CS301</span>
+</div>
+<!-- E10 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">E10</span>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">MATH201</span>
+</div>
+</div>
+<!-- ROW F -->
+<div class="grid grid-cols-11 gap-3 items-center">
+<span class="text-xs font-mono font-bold text-secondary text-center w-8">F</span>
+<!-- F1 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">F1</span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">CS301</span>
+</div>
+<!-- F2 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">F2</span>
+<span class="w-2 h-2 rounded-full bg-sky-400"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">PHY102</span>
+</div>
+<!-- F3 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">F3</span>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">MATH201</span>
+</div>
+<!-- F4 -->
+<div class="group relative bg-surface-container-low/60 hover:bg-surface-container-high rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all opacity-60">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-secondary">F4</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<span class="text-[10px] text-secondary/60 font-mono">Vacant</span>
+</div>
+<!-- F5 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">F5</span>
+<span class="w-2 h-2 rounded-full bg-sky-400"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">PHY102</span>
+</div>
+<!-- F6 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">F6</span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">CS301</span>
+</div>
+<!-- F7 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">F7</span>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">MATH201</span>
+</div>
+<!-- F8 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">F8</span>
+<span class="w-2 h-2 rounded-full bg-sky-400"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">PHY102</span>
+</div>
+<!-- F9 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">F9</span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">CS301</span>
+</div>
+<!-- F10 -->
+<div class="group relative bg-surface-container-high hover:bg-surface-bright rounded-lg p-2.5 flex flex-col justify-between h-14 cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono text-on-surface font-semibold">F10</span>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</div>
+<span class="text-[10px] text-secondary font-mono truncate">MATH201</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Strip: Course Legend & Assigned Invigilators Deck -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+<!-- Course Legend & Density Breakdown -->
+<div class="lg:col-span-6 bg-surface-container/60 backdrop-blur-md p-5 rounded-xl flex flex-col justify-between gap-4 shadow-lg">
+<div class="flex items-center justify-between">
+<span class="text-xs font-mono uppercase tracking-wider text-secondary">Course Density Matrix</span>
+<span class="text-xs font-mono text-on-surface-variant">110 / 120 Desks Occupied</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+<!-- CS301 -->
+<div class="bg-surface-container-high p-3 rounded-lg flex items-center gap-3">
+<span class="w-3 h-3 rounded-full bg-primary flex-shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<span class="text-xs font-mono font-semibold text-on-surface truncate">CS301</span>
+<span class="text-[11px] text-secondary font-mono">40 Students</span>
+</div>
+</div>
+<!-- MATH201 -->
+<div class="bg-surface-container-high p-3 rounded-lg flex items-center gap-3">
+<span class="w-3 h-3 rounded-full bg-tertiary flex-shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<span class="text-xs font-mono font-semibold text-on-surface truncate">MATH201</span>
+<span class="text-[11px] text-secondary font-mono">38 Students</span>
+</div>
+</div>
+<!-- PHY102 -->
+<div class="bg-surface-container-high p-3 rounded-lg flex items-center gap-3">
+<span class="w-3 h-3 rounded-full bg-sky-400 flex-shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<span class="text-xs font-mono font-semibold text-on-surface truncate">PHY102</span>
+<span class="text-[11px] text-secondary font-mono">32 Students</span>
+</div>
+</div>
+<!-- Vacant -->
+<div class="bg-surface-container-high p-3 rounded-lg flex items-center gap-3">
+<span class="w-3 h-3 rounded-full bg-secondary flex-shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<span class="text-xs font-mono font-semibold text-on-surface-variant truncate">Buffer Seats</span>
+<span class="text-[11px] text-secondary font-mono">10 Vacant</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Assigned Invigilators -->
+<div class="lg:col-span-6 bg-surface-container/60 backdrop-blur-md p-5 rounded-xl flex flex-col justify-between gap-4 shadow-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="text-xs font-mono uppercase tracking-wider text-secondary">Active Invigilation Squad</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+</div>
+<button class="text-xs font-mono text-primary hover:underline flex items-center gap-1">
+<span>Duty Roster</span>
+<span class="material-symbols-outlined text-xs">arrow_forward</span>
+</button>
+</div>
+<div class="flex flex-wrap items-center gap-3">
+<!-- Invigilator 1 -->
+<div class="flex-1 min-w-[170px] bg-surface-container-high p-2.5 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2.5 min-w-0">
+<img class="w-8 h-8 rounded-full object-cover" data-alt="A portrait of a male university professor in a sharp dark blazer with glasses, looking confident and calm, natural warm lighting against a dark neutral studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3j-c8ov9noqWmOpHt0ReTZhSJWEDAMOiILPP2Rsch6EwbxErQ4AYIQ5QYGhvPUqn-IghJQEqSlfGopI-rA5aKA9fDqR6-wgO_NLsh_13LgahGHpEtzUyIeXKLzyEJDl-EaVPHD-RR3UdqEmb2OOpkVw9q4XcQFzjpGk621_xpd9ybaMdtdgNyjMGCfX3eNCUB0Mje47r43urd5mZrLeyFPt3ywYiunsU9NV7wnxFxnK4RI8dDe2la"/>
+<div class="flex flex-col min-w-0">
+<span class="text-xs font-medium text-on-surface truncate">Dr. Marcus Webb</span>
+<span class="text-[10px] text-secondary font-mono">Zone A (Rows A-C)</span>
+</div>
+</div>
+<button class="text-secondary hover:text-on-surface p-1">
+<span class="material-symbols-outlined text-sm">more_vert</span>
+</button>
+</div>
+<!-- Invigilator 2 -->
+<div class="flex-1 min-w-[170px] bg-surface-container-high p-2.5 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2.5 min-w-0">
+<img class="w-8 h-8 rounded-full object-cover" data-alt="A portrait of a professional female academic supervisor with neatly styled hair and an attentive expression, soft dim background lighting with violet ambient undertones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiCwCB6NKYuWrjjKSoOc-4eXoE3rRkaUVlGAW0O4fYAUc7s-RldXUe_qVGtDzy4FaT3cIdT3tRGT_81y2vzmVrzqseUjBY9Eu-r69dxCTUiNar85j2zcGxEcejsA3t_Z-2GyDeYvJceMY9BE1jmKdg0lfyouS0ZCTBK3yPbfUbw7paBD5-1SlanJBPgmy0NTfjW1Z7_x49eq6STiFlrP8WGCI92fckyYtiYopJN0t3MPL6XpOiS7I0"/>
+<div class="flex flex-col min-w-0">
+<span class="text-xs font-medium text-on-surface truncate">Prof. Sarah Lin</span>
+<span class="text-[10px] text-secondary font-mono">Zone B (Rows D-F)</span>
+</div>
+</div>
+<button class="text-secondary hover:text-on-surface p-1">
+<span class="material-symbols-outlined text-sm">more_vert</span>
+</button>
+</div>
+<!-- Invigilator 3 (Reserve / Roaming) -->
+<div class="flex-1 min-w-[170px] bg-surface-container-high p-2.5 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2.5 min-w-0">
+<img class="w-8 h-8 rounded-full object-cover" data-alt="A professional headshot of a young male teaching assistant wearing a minimalist dark turtleneck, looking focused and attentive in a modern academic environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASN-mVE0ZN9gXWrpGhXTmNXl-YcMA0ue9mJByosVtmfeUmd0Cebvg-gXWMRV7jHCaV-5CLi5uEhx3njrQ0X9ROmjOsFwLxsg_04r8dVC_5Bo9uP-M9GpUwWL90lHfGwNivfKCkPS16u8F6LQ_yed2PFnIHKmpPY_ETakDnOc9ma_8zwuQ_f8QR9k9BCj1dAOcW_ld_DGmNBd8HjZ45j1KmTa7qp8yKOVpBQSbkdo9HvVMF00dPpgAM"/>
+<div class="flex flex-col min-w-0">
+<span class="text-xs font-medium text-on-surface truncate">Aleksei Voronov</span>
+<span class="text-[10px] text-tertiary font-mono">Roaming · Active</span>
+</div>
+</div>
+<button class="text-secondary hover:text-on-surface p-1">
+<span class="material-symbols-outlined text-sm">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for Swap Mode Toggle
+  const swapBtn = document.getElementById('toggle-swap-btn');
+  let swapActive = true;
+  if (swapBtn) {
+    swapBtn.addEventListener('click', () => {
+      swapActive = !swapActive;
+      const label = swapBtn.querySelector('span:last-child');
+      if (swapActive) {
+        label.textContent = 'ON';
+        label.className = 'text-[10px] px-1.5 py-0.5 rounded bg-primary-container text-on-primary font-mono';
+        swapBtn.classList.add('text-primary');
+      } else {
+        label.textContent = 'OFF';
+        label.className = 'text-[10px] px-1.5 py-0.5 rounded bg-surface-container text-secondary font-mono';
+        swapBtn.classList.remove('text-primary');
+      }
+    });
+  }
+</script></main></div></body></html>

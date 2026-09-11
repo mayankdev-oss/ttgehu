@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  /* Obsidian color system */
+  --color-background: #09090b;
+  --color-surface: #0c0c0f;
+  --color-surface-container-lowest: #09090b;
+  --color-surface-container-low: #0f0f12;
+  --color-surface-container: #121215;
+  --color-surface-container-high: #18181b;
+  --color-surface-container-highest: #1e1e22;
+  --color-surface-bright: #18181b;
+  --color-surface-dim: #0c0c0f;
+  --color-surface-variant: #18181b;
+
+  --color-outline: #52525b;
+  --color-outline-variant: #27272a;
+
+  --color-primary: #a78bfa;
+  --color-primary-container: #7c3aed;
+  --color-primary-fixed: #ede9fe;
+  --color-primary-fixed-dim: #c4b5fd;
+  --color-on-primary: #0a0012;
+  --color-on-primary-container: #ede9fe;
+  --color-inverse-primary: #5b21b6;
+
+  --color-secondary: #71717a;
+  --color-secondary-container: #27272a;
+  --color-on-secondary: #09090b;
+  --color-on-secondary-container: #a1a1aa;
+
+  --color-tertiary: #34d399;
+  --color-tertiary-container: #065f46;
+  --color-on-tertiary: #001a12;
+  --color-on-tertiary-container: #bbf7d0;
+
+  --color-error: #ef4444;
+  --color-error-container: #3b1111;
+  --color-on-error: #1a0000;
+  --color-on-error-container: #fca5a5;
+
+  --color-on-background: #fafafa;
+  --color-on-surface: #fafafa;
+  --color-on-surface-variant: #a1a1aa;
+  --color-inverse-surface: #fafafa;
+  --color-inverse-on-surface: #09090b;
+
+  --font-headline: "Geist", sans-serif;
+  --font-body: "Geist", sans-serif;
+  --font-label: "Geist", sans-serif;
+
+  --radius: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+}
+
+@layer base {
+  html, body { margin: 0; padding: 0; }
+  body { overscroll-behavior: none; }
+  ::-webkit-scrollbar { display: none; }
+}

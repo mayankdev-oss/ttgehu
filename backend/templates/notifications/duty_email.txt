@@ -1,0 +1,19 @@
+Dear {{ teacher.name }},
+
+You have been assigned to invigilate an exam. Please find the details below:
+
+Exam Session : {{ session.name }}
+Date         : {{ session.date }}
+Slot         : {{ slot.label }}  ({{ slot.start_time }} — {{ slot.duration_minutes }} minutes)
+Classroom    : {{ classroom.name }}
+
+Student List for Your Classroom:
+----------------------------------
+{% for a in assignments %}{{ forloop.counter }}. {{ a.seat.label }}  |  {{ a.student.roll_number }}  |  {{ a.student.name }}  |  {{ a.student.course.code }}
+{% empty %}No students assigned yet.
+{% endfor %}
+
+Please report 15 minutes before the exam start time.
+
+Regards,
+Examination Department

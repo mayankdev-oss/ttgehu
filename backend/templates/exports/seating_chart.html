@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  body { font-family: Arial, sans-serif; font-size: 11px; margin: 20px; }
+  h1 { font-size: 16px; margin-bottom: 4px; }
+  h2 { font-size: 13px; color: #444; margin-bottom: 12px; }
+  .meta { margin-bottom: 16px; color: #555; }
+  table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+  th { background: #2c3e50; color: white; padding: 6px 8px; text-align: left; }
+  td { border: 1px solid #ddd; padding: 5px 8px; }
+  tr:nth-child(even) td { background: #f9f9f9; }
+  .conflict { background: #ffe0e0 !important; color: #c0392b; }
+  .grid-container { display: grid; gap: 4px; margin-top: 12px; }
+  .seat { border: 1px solid #ccc; border-radius: 3px; padding: 4px; font-size: 9px;
+          text-align: center; background: #ecf0f1; min-height: 40px; }
+  .seat.occupied { background: #d5e8d4; border-color: #82b366; }
+  .seat.conflict { background: #f8cecc; border-color: #b85450; }
+  .seat.empty { background: #f5f5f5; color: #aaa; }
+  .seat-label { font-weight: bold; font-size: 8px; color: #555; }
+</style>
+</head>
+<body>
+  <h1>Seating Chart — {{ classroom.name }}</h1>
+  <h2>{{ plan.exam_session.name }} | {{ plan.slot.label }} | Version {{ plan.version }}</h2>
+  <div class="meta">
+    Date: {{ plan.exam_session.date }} &nbsp;|&nbsp;
+    Time: {{ plan.slot.start_time }} ({{ plan.slot.duration_minutes }} min) &nbsp;|&nbsp;
+    Capacity: {{ classroom.capacity }}
+  </div>
+
+  {% if layout.shape == "grid" %}
+  <!-- Grid layout -->
+  <div class="grid-container" style="grid-template-columns: repeat({{ layout.cols }}, 1fr);">
+    {% for a in assignments %}
+    <div class="seat {% if a.student %}{% if a.is_conflict %}conflict{% else %}occupied{% endif %}{% else %}empty{% endif %}">
+      <div class="seat-label">{{ a.seat.label }}</div>
+      {% if a.student %}
+        <div>{{ a.student.roll_number }}</div>
+        <div>{{ a.student.name|truncatechars:12 }}</div>
+        <div style="color:#777">{{ a.student.course.code }}</div>
+      {% else %}—{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% else %}
+  <!-- Circular / tabular fallback -->
+  <table>
+    <thead><tr><th>Seat</th><th>Roll No.</th><th>Student Name</th><th>Course</th><th>Conflict?</th></tr></thead>
+    <tbody>
+    {% for a in assignments %}
+    <tr {% if a.is_conflict %}class="conflict"{% endif %}>
+      <td>{{ a.seat.label }}</td>
+      <td>{{ a.student.roll_number|default:"—" }}</td>
+      <td>{{ a.student.name|default:"(empty)" }}</td>
+      <td>{{ a.student.course.code|default:"" }}</td>
+      <td>{% if a.is_conflict %}⚠ Yes{% else %}{% endif %}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% endif %}
+</body>
+</html>
