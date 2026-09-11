@@ -66,5 +66,4 @@ The system is built on a scalable, asynchronous architecture to ensure the UI re
    * Backend API: `http://localhost:8000/api/`
 
 ## 👥 Authors
-
-Built by Mayank and the Antigravity Team.
+claude, gpt, gemini (maha gathbandhan)
